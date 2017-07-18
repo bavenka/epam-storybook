@@ -1,7 +1,7 @@
-import React, {PropTypes} from 'react'
+import React, {PropTypes, Component} from 'react'
 import './index.css';
 
-class Section extends React.Component {
+class Section extends Component {
 
     constructor(props) {
         super(props);
@@ -14,12 +14,20 @@ class Section extends React.Component {
 
 
     render() {
+        let {sectionName, isSelected} = this.props;
+
         return (
-            <li className={`section ${ this.props.isSelected ? 'selected-section' : ''}`}
-                onClick={this.onClick} name={this.props.sectionName}>
-                <span> {this.props.sectionName}</span>
+            <li className={`section ${ isSelected ? 'selected-section' : ''}`}
+                onClick={this.onClick} name={sectionName}>
+                <span>{sectionName}</span>
             </li>
         )
     }
 }
+
+Section.propTypes = {
+    sectionName: PropTypes.string.isRequired,
+    isSelected: PropTypes.bool.isRequired,
+};
+
 export default Section;

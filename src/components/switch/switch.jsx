@@ -6,4 +6,5 @@ const Switch = ({switchClassName, sliderClassName}) => (
         <span className={sliderClassName}/>
     </label>
 );
+
 export default Switch;

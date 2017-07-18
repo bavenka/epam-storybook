@@ -15,15 +15,15 @@ import spinnerStyles from '../styles/spinnerStyles.css'
 import img from '../components/circle-loading-black.png';
 import ButtonName from '../components/button/buttonName';
 
-let contentMassive = [
+let testMassive = [
     {
         key: 'Selected Option',
-        value: <div>
+        value: [<div>
             <h3>Paris</h3>
             <p>
                 Paris is the capital of France.
             </p>
-        </div>
+        </div>]
     },
     {
         key: 'Not Selected Option',
@@ -51,10 +51,10 @@ let contentMassive = [
 
     {
         key: 'Test section',
-        value: <div>
+        value: [<div>
             <h3>Test</h3>
             <p>Test section.</p>
-        </div>
+        </div>]
     }
 ];
 
@@ -80,7 +80,7 @@ storiesOf('Text button', module)
 storiesOf('Tab', module)
     .add('navigationControls', () => (
         <Center>
-            <NavigationTab mapSectionContent={contentMassive}/>
+            <NavigationTab sectionAndContentPairArray={testMassive}/>
         </Center>
     ));
 

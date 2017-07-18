@@ -6,4 +6,9 @@ const Content = ({content}) => (
         {content}
     </div>
 );
+
+Content.propTypes = {
+    content: PropTypes.array.isRequired,
+};
+
 export default Content;
