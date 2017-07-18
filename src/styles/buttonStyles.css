@@ -1,0 +1,27 @@
+.defaultState {
+    background-color: #FF3B65;
+    border-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 22px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    width: 25%;
+}
+
+#disabledState:disabled {
+    background-color: #EAEAEA;
+    color: #BBBBBB;
+}
+
+#selectedState:active {
+    background-color: #D93256
+}
+
+#hoverState:hover {
+    background-color: #FF5479;
+}
+
+
+

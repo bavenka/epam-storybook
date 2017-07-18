@@ -1,0 +1,43 @@
+/*.navigation-controls {
+    font-family: Arial;
+    padding-left: 0;
+}
+
+.section {
+    display: inline-block;
+    border-bottom: solid #BBBBBB;
+    width: 50%;
+}
+
+.selected-section {
+    border-bottom-color: #FF3B65;
+    background-color: yellow;
+}
+
+div .navigation-controls li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}*/
+
+/*div .right:hover ~ hr {
+    margin-left: 50%;
+}*/
+
+/*div .right {
+    background-color: red;
+}
+
+div .left {
+    background-color: yellow;
+}*/
+
+/*hr {
+    margin-left: 0;
+    width: 50%;
+    height: 3px;
+    background-color: #FF3B65;
+    border: none;
+    transition: .3s ease-in-out;
+}*/

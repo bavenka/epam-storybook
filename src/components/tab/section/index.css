@@ -1,0 +1,16 @@
+.section {
+    border-bottom: solid #BBBBBB;
+    width: 100%;
+}
+
+.selected-section {
+    border-bottom-color: #FF3B65;
+}
+
+.section span {
+    display: block;
+    font-size: 17px;
+    padding-bottom: 1%;
+    color: #333;
+    cursor: pointer;
+}

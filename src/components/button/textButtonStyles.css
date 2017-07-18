@@ -1,0 +1,38 @@
+.text-button-default-state {
+    background-color: transparent;
+    border: none;
+    color: #204B6F;
+    width: 100%;
+    display: flex;
+}
+
+.button-content-block {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+.text-button-default-state:hover {
+    color: #FF3B65;
+}
+
+.text-button-default-state:active {
+    color: #153754;
+}
+
+.text-button-default-state:disabled {
+    color: #BBBBBB;
+}
+
+
+
+
+
