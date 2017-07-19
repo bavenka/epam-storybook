@@ -2,11 +2,10 @@ import React from 'react';
 
 import {storiesOf} from '@storybook/react';
 import {action} from '@storybook/addon-actions';
-import Center from '../components/wrappers/center';
 import Switch from '../components/switch/index';
 import TextButton from '../components/button/textButton/index';
 import NavigationTab from '../components/tab/navigationTab/index'
-import img from '../components/circle-loading-black.png';
+import img from '../components/button/circle-loading-black.png';
 
 let testMassive = [
     {
@@ -53,21 +52,15 @@ let testMassive = [
 
 storiesOf('Switch', module)
     .add('switch', () => (
-        <Center>
-            <Switch/>
-        </Center>
+        <Switch/>
     ));
 storiesOf('Text button', module)
     .add('regular', () => (
-        <Center>
-            <TextButton disabled={false} imgUrl={img} text='Processing'/>
-        </Center>
+        <TextButton disabled={false} imgUrl={img} text='Processing'/>
     ));
 storiesOf('Tab', module)
     .add('navigationControls', () => (
-        <Center>
-            <NavigationTab sectionAndContentPairArray={testMassive}/>
-        </Center>
+        <NavigationTab sectionAndContentPairArray={testMassive}/>
     ));
 
 
