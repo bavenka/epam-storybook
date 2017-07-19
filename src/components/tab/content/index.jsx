@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './index.css'
 
 const Content = ({content}) => (
-    <div className='content-container'>
+    <div className='tab-content-container'>
         {content}
     </div>
 );

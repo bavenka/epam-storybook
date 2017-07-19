@@ -5,7 +5,7 @@ import './index.css'
 
 
 const Content = ({imgUrl, spinnerStyle, text, contentStyle, textStyle}) => (
-    <div className='content-container' style={contentStyle}>
+    <div className='button-content-container' style={contentStyle}>
         <Spinner imgUrl={imgUrl} style={spinnerStyle}/>
         <Text text={text} style={textStyle}/>
     </div>

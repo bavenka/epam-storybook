@@ -6,5 +6,6 @@
 
 .spinner {
     height: 22px;
+    margin-right: 10%;
     animation: spin 1.5s steps(12, start) infinite;
 }
