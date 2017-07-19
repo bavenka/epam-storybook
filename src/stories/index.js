@@ -2,18 +2,11 @@ import React from 'react';
 
 import {storiesOf} from '@storybook/react';
 import {action} from '@storybook/addon-actions';
-import {linkTo} from '@storybook/addon-links';
 import Center from '../components/wrappers/center';
-import Switch from '../components/switch/switch';
-import TextButton from '../components/button/textButton';
-import Spinner from '../components/button/spinner/index';
+import Switch from '../components/switch/index';
+import TextButton from '../components/button/textButton/index';
 import NavigationTab from '../components/tab/navigationTab/index'
-import buttonStyles from '../styles/buttonStyles.css'
-import switchStyles from '../styles/switchStyles.css'
-import textButtonStyles from '../components/button/textButtonStyles.css'
-import spinnerStyles from '../styles/spinnerStyles.css'
 import img from '../components/circle-loading-black.png';
-import ButtonName from '../components/button/buttonName';
 
 let testMassive = [
     {
@@ -61,20 +54,13 @@ let testMassive = [
 storiesOf('Switch', module)
     .add('switch', () => (
         <Center>
-            <Switch switchClassName='switch'
-                    sliderClassName='slider'/>
+            <Switch/>
         </Center>
     ));
 storiesOf('Text button', module)
     .add('regular', () => (
         <Center>
-            <TextButton buttonClassName='text-button-default-state'
-                        contentBlockClassName='button-content-block'
-                        disabled={false}
-                        spinner={(<Spinner spinnerBlockClassName='spinnerBlock'
-                                           imgUrl={img}/>)}
-                        buttonName={(<ButtonName name='Processing'/>)}>
-            </TextButton>
+            <TextButton disabled={false} imgUrl={img} text='Processing'/>
         </Center>
     ));
 storiesOf('Tab', module)

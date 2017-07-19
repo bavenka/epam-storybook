@@ -7,7 +7,7 @@ const Spinner = ({style, imgUrl}) => (
 );
 
 Spinner.propTypes = {
-    imgUrl: PropTypes.object
+    imgUrl: PropTypes.string
 };
 
 export default Spinner;
