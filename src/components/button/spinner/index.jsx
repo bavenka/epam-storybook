@@ -1,4 +1,5 @@
-import React, {PropTypes} from 'react'
+import React from 'react'
+import PropTypes from 'prop-types';
 import './index.css'
 
 const Spinner = ({style, imgUrl}) => (
@@ -6,7 +7,7 @@ const Spinner = ({style, imgUrl}) => (
 );
 
 Spinner.propTypes = {
-    onClick: React.PropTypes.func
+    imgUrl: PropTypes.object
 };
 
 export default Spinner;

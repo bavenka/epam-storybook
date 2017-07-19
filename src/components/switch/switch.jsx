@@ -1,4 +1,4 @@
-import React, {PropTypes} from 'react'
+import React from 'react'
 
 const Switch = ({switchClassName, sliderClassName}) => (
     <label className={switchClassName}>

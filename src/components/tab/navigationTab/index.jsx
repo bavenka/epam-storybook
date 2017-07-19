@@ -1,4 +1,5 @@
-import React, {PropTypes, Component} from 'react'
+import React, {Component} from 'react'
+import PropTypes from 'prop-types';
 import './index.css';
 import Content from '../content'
 import Section from '../section'
@@ -20,7 +21,6 @@ class NavigationTab extends Component {
     render() {
         const {sectionAndContentPairArray} = this.props;
         const {sectionName} = this.state;
-        let contentElementIndex;
         return (
             <div>
                 <ul className='sections-container'>

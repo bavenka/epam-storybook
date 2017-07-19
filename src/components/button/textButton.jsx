@@ -1,4 +1,4 @@
-import React, {PropTypes} from 'react'
+import React from 'react'
 
 
 const textButton = ({buttonName, buttonClassName, style, contentBlockClassName, disabled, spinner}) => (
